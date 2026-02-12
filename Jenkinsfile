@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+        GITHUB_CREDENTIALS = 'GitHub Token'
         DOCKERHUB_CREDENTIALS = 'dockerhub-creds'
         IMAGE_NAME = 'mahender397/jenkins-argocd-demo'
         MANIFEST_REPO = 'https://github.com/mahi3297/k8s-manifests.git'
